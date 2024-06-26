@@ -10,7 +10,7 @@ interface CloudinaryUploadResult {
 const UploadButton = () => {
   const [publicId, setPublicId] = useState("");
 
-  const handleSuccess = (result) => {
+  const handleSuccess = (result: any) => {
     const info = result.info as CloudinaryUploadResult;
     if (result.event !== "success") return;
 
